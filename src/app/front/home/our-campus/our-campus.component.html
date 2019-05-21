@@ -1,0 +1,50 @@
+<div class="holder">
+	<div class="inner">
+		<div class="headingImg"><img src="../../../../assets/img/home/our_infrastructure_heading.png" alt=""></div>
+		
+		<h4 class="haveLoop">Have a look at our Campus and Offerings</h4>
+		<p>
+			The school has a large Sports Complex and spacious Play-Grounds, Yoga Hall, Volleyball, Basketball Court, International Standard Synthetic Tennis Courts, Squash Court, 25 m Swimming Pool and a small pool for beginners, Dance Room, Indian and Western Music Rooms, Audio-Video Recording Room, In-house Infirmary with a team of qualified doctors on duty, Counselor Room, Smart Classes with Multimedia Facilities in all classrooms, Computer Labs, Two well stocked Libraries, <span *ngIf="more">
+			Three Large Science Labs, Biotech Lab., Art Studio, Multipurpose Hall, Air-conditioned Auditorium, Math Lab., Humanities Lab., Language Lab., Open-Air-Plaza etc. which are integral parts of our infrastructure. 
+The curriculum is designed to ensure all round development of each student. Besides a comprehensive curriculum, a technologically designed methodology is introduced at all stages to develop skills required to achieve academic success. The medium of instruction is English and special emphasis is laid both on written and spoken English at all levels. It is obligatory for all students to speak in English within the school premises. The scheme of studies is structured and flexible and the link between Pre-Primary, Primary, Middle, Secondary and Senior Secondary stages is well integrated and phased out.</span>
+
+		</p>
+		
+		<a (click)="readMore()" *ngIf="!more" style="cursor: pointer;"><b><i>Read More</i></b></a>
+
+		<div class="infraHolder">
+			<div class="mainImg"  *ngIf="desktop" style="margin-top: 30px; background: url(../../../../assets/img/home/campus.jpg); height: 500px;  text-align: center; background-position: center center; margin: 0 auto; background-size: contain; background-repeat: no-repeat;">
+				<span class="item" (click)="campusFun()">our_campus</span>
+				<span class="item" (click)="facilityFun()">facilities</span>
+				<span class="item" (click)="stagesOfStudyFun()">stages_of_study </span>
+				<span class="item" (click)="Streams_SubjectsFun()">stream</span>
+				<span class="item" (click)="curricularFun()">activities</span>	
+			</div>
+
+			<div class="forMobileCampus"  *ngIf="mobile">
+				<span class="item" (click)="campusFun()" [ngClass]="{'animated pulse infinite':mainActiveBtn == 'campus'}">Our campus</span>
+				<span class="item" (click)="facilityFun()" [ngClass]="{'animated pulse infinite':mainActiveBtn == 'facility'}">Exclusive Services</span>
+				<span class="item" (click)="stagesOfStudyFun()" [ngClass]="{'animated pulse infinite':mainActiveBtn == 'stages'}">Stages of study </span>
+				<span class="item" (click)="Streams_SubjectsFun()" [ngClass]="{'animated pulse infinite':mainActiveBtn == 'subject'}">Stream & Subjects</span>
+				<span class="item" (click)="curricularFun()" [ngClass]="{'animated pulse infinite':mainActiveBtn == 'activity'}">Co-curricular Activities</span>	
+			</div>
+
+
+			<div>
+				
+			</div>
+
+			<div class="tabWithContent" [ngStyle]="{'border-top':lineColor}" >
+				<span class="mover" [ngStyle]="{'border-color':colr, 'left':left}"></span>				
+				<app-campus *ngIf="campus"></app-campus>
+				<app-activities *ngIf="curricular"></app-activities>
+				<app-facility *ngIf="facility"></app-facility>
+				<app-stageofstudy *ngIf="stagesOfStudy"></app-stageofstudy>
+				<app-steams *ngIf="Streams_Subjects"></app-steams>
+			</div>
+		</div>
+
+	</div>
+	<div style="clear:both"></div>
+</div>
+

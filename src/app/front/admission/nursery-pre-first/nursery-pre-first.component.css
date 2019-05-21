@@ -1,0 +1,85 @@
+.tabContent {
+	width: 100%;
+	/* background: red; */
+}
+
+.tabContent > div {
+	display: inline-block;
+
+}
+
+.tabContentLeft {
+	width: 300px;
+	float: left;
+	text-align: left;
+	line-height: 82px;
+}
+
+.tabContentRight {
+	width: calc(100% - 300px);
+	padding-left: 3%;
+	padding: 2%; 
+}
+
+.tabContentLeft li {
+	cursor: pointer;
+	display: block;
+
+}
+
+h5{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 47px;
+	color: #4bb4f5;
+}
+
+h6 {
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+p {
+	display: block;
+	width: 100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 520px) {
+	
+	.tabContentLeft ul li {width: 46%;display: inline;float: left;border: 1px solid #a5a5a5;padding: 2%;line-height: 24px;height: 82px;text-align: center;margin: 2%;cursor: pointer; padding-top: 16px}
+
+	.tabContentRight { width: 100%!important; padding: 0 5%!important;
+	}
+	.mainTab li {
+		line-height: 30px!important;
+		margin: 3px!important;
+	}
+
+	li.tab1.animated.infinite.pulse {}
+
+	.tabContentLeft {
+		width: 100%!important;
+	}
+	.panel-body h2 {
+		margin-top: 39px;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+
+
+	h5 {
+		font-size: 0.9em!important;
+	}
+	.icon-plus{display: none}
+
+	
+}

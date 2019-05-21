@@ -1,0 +1,77 @@
+
+<div class="slider-footer" *ngIf="desktop">
+	<div class="socilaMedia">
+		<div class="social mt-1">
+		<a href="https://www.facebook.com/dps.ac.in/" target="_blank">			
+			<span class="facebook"></span>
+		</a>
+		<a href="https://twitter.com/dps_agra?lang=en" target="_blank">			
+			<span class="twitter"></span>
+		</a>
+		
+	</div>
+	</div>
+	
+	<div class="item telePho">		
+		<ul>
+			<li><span class="telIcon"></span>+91-98376 99999</li>
+			<li><span class="mailIcon"></span>office@dps.ac.in</li>			
+			<li class="annou">
+					<span class="iconAnounce"></span>
+					<div  class="animated infinite pulse">Admission open 2019-20</div>
+			</li>			
+		</ul>	
+	</div>
+
+
+
+
+
+	<div class="item social" style="width: 20%;" >
+		<div class="social mt-1">
+			<a href="https://www.facebook.com/dps.ac.in/" target="_blank">			
+				<span class="facebook"></span>
+			</a>
+			<a href="https://twitter.com/dps_agra?lang=en" target="_blank">			
+				<span class="twitter"></span>
+			</a>
+		
+		</div>
+	</div>
+
+
+	<div class="item mainBtns" style="width: auto">
+		<ul>
+			<li>
+				<a href="#" routerLink="/admission" (click)="run('admission')"><span class="admissionBottom"></span>
+					Admission
+				</a>
+			</li>
+
+			<li class="hideMe">
+				<a routerLink="/contact-us" (click)="run('contact')"><span class="contactBottom"></span>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a  href="https://m.p-y.tm/dpsagra_web" target="_blank" ><span class="payIcon"></span>
+					Fee Payment<span  class="tru">Through Paytm</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="slider-footer-mobile" *ngIf="mobile" style="height:80px">
+	<span class="animated infinite pulse" style="display: block;">Admission open 2019-20</span>
+</div>
+
+
+

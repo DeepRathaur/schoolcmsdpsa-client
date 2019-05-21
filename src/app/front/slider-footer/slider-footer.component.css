@@ -1,0 +1,140 @@
+.slider-footer {
+	position: fixed;
+    width: 100%;
+    background: #223f49;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: .8em;
+    padding: 2px 0;
+    text-align: center; 
+    height: 53px !important;
+
+}
+.slider-footer .item{
+	display: inline-block;
+	float:left;
+}
+
+.item:last-child {
+	float: right !important;
+}
+.telandEmail.left li {
+	display: inline-block;     
+}
+
+.social {
+	
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+}
+.social span {
+	display: inline-block;
+	
+}
+.twitter {
+	background: url('../../../assets/img/icons.png') no-repeat -584px -186px;
+	width: 39px;
+	height: 39px;
+}
+
+.google {
+	background: url('../../../assets/img/icons.png') no-repeat -645px -184px;
+	width: 38px;
+	height: 38px;
+}
+
+.facebook {
+	background: url('../../../assets/img/icons.png') no-repeat -698px -182px;
+	width: 38px;
+	height: 38px;
+}
+span.telIcon{background:url(../../../assets/img/icons.png) no-repeat -68px -200px;width:20px;height:20px;display:inline-block;margin-right:14px;margin-top:-4px;vertical-align:middle}
+span.mailIcon{background:url(../../../assets/img/icons.png) no-repeat -28px -201px;width:23px;height:19px;display:inline-block;margin-right:14px;margin-top:-4px;vertical-align:middle;background:url(../../../assets/img/icons.png) no-repeat -28px -201px;width:23px;height:19px;display:inline-block;margin-right:14px;margin-top:-4px;vertical-align:middle}
+span.iconAnounce{background:url(../../../assets/img/icons.png) no-repeat -113px -191px;width:34px;height:29px;display:inline-block;margin-right:14px;margin-top:-4px;vertical-align:middle}
+.feepaymentIcon{background:url(../../../assets/img/icons.png) no-repeat -242px -200px;width:32px;height:20px;display:inline-block;margin-right:14px;margin-top:-4px;vertical-align:middle}
+
+
+
+
+span.admissionBottom, span.contactBottom, .payIcon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.admissionBottom {
+	background: url('../../../assets/img/icons.png') no-repeat -587px -138px;
+	width: 24px;
+	height: 24px;
+}
+
+.contactBottom {
+	background: url('../../../assets/img/icons.png') no-repeat -642px -140px;
+	width: 27px;
+	height: 20px;
+}
+
+
+.payIcon {
+	background: url('../../../assets/img/icons.png')  no-repeat -698px -142px;
+	width: 27px;
+	height: 19px;
+}
+
+.iconAnounce {
+	background: url('../../../assets/img/icons.png') no-repeat -113px -191px;
+	width: 34px;
+	height: 29px;
+}
+
+
+
+
+.item.mainBtns ul li {
+    display: inline-block;
+       margin-right: 6px;
+    background: #d6e51a;
+    padding: 0 9px;
+    color: #fff;
+    line-height: 37px;
+}
+.item.mainBtns ul li a {
+    color: #000;
+}
+
+.slider-footer li {
+    float: left;
+    list-style: none;
+    margin-right: 16px;
+}
+
+li.annou > * {
+    display: inline-block;
+    color: #d6e51a;
+}
+.item.telePho{
+		width: 40%;
+		margin-left: 12px;
+	}
+
+.socilaMedia{
+    width: 175px;
+    position: absolute;
+    top: -57px;
+    right: 0;
+    background: #213f49;
+    border-radius: 5px 0 0 0;
+    padding-top: 4px;
+    height: 58px;
+}
+.socilaMedia{display: none!important}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1700px)  {
+    .hideMe{display:none!important}
+    .slider-footer {    font-size: .8em!important;    }
+	.item.telePho{		width: 642px;	}
+	.item.social{display: none!important}
+	.socilaMedia{display: block !important}
+}

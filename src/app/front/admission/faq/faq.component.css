@@ -1,0 +1,24 @@
+section {
+    border: 1px solid #ccc;
+    padding: 2%;
+    border-top: 0;
+}
+label {
+    
+    
+    display: block;
+    background: #efefef;
+    padding: 19px 20px;
+    border: 1px solid #bfbfbf;
+    margin: 33px 0 0 0;
+    cursor: pointer;
+}
+@media only screen and (min-width: 300px) and (max-width: 520px) {
+
+.icon-plus{display: none}
+.icon-minus{display: none}
+}
+
+ul {
+    margin-left: 26px;
+}

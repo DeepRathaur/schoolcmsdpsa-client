@@ -1,0 +1,21 @@
+img.uploading {
+    width: 77px;
+}
+
+span.uploadPro {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #7b7b7b;
+    height: 50px;
+    display: block;
+}
+
+span.progress {
+    display: block;
+    background: rebeccapurple;
+    height: 100%;
+    border-radius: 0;   
+    padding-left: 3%;
+    font-size: 1em;
+    color: #fff;
+}

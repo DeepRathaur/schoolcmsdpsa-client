@@ -1,0 +1,51 @@
+.tabContent {
+    width: 100%;
+    /* background: red; */
+}
+
+.tabContent > div {
+    display: inline-block;
+    
+}
+
+.tabContentLeft {
+        width: 300px;
+    float: left;
+    text-align: left;
+    line-height: 82px;
+}
+
+.tabContentRight {
+    width: calc(100% - 300px);
+        padding-left: 3%;
+ 	    padding: 2%; 
+}
+
+.tabContentLeft li {
+    cursor: pointer;
+    display: block;
+    border-bottom: 1px solid #616161;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 47px;
+    color: #4bb4f5;
+}
+
+h6 {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    display: block;
+    width: 100%;
+}
+
+.tabContentRight ul li {
+    list-style: circle;
+    margin-left: 29px;
+}

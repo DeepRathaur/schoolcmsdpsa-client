@@ -1,0 +1,117 @@
+
+
+<div class="bannerNew">
+	<div class="innerNew">
+		<div class="leftItem">
+			<img src="../../assets/img/innerBanner/admission/admission.png" alt="">
+
+		</div>
+		<div class="rightItem"></div>
+	</div>
+</div>
+
+
+<div class="admissionPage">
+	
+	<div class="mainTab">
+		<ul>
+			<li class="tab1" (click)="run('first')" [ngStyle]="{'border-top': first ? '2px solid #000':'0'}" [ngClass]="{'animated infinite pulse': first }">
+				Nursery - Prep - I
+			</li>
+			<li class="tab2" (click)="run('second')" [ngStyle]="{'border-top': second ? '2px solid #000':'0'}" [ngClass]="{'animated infinite pulse': second }">
+				II - V
+			</li>
+			<li class="tab3" (click)="run('third')" [ngStyle]="{'border-top': third ? '2px solid #000':'0'}" [ngClass]="{'animated infinite pulse': third }">
+				VI - X
+			</li> 
+			<li class="tab4" (click)="run('fourth')" [ngStyle]="{'border-top': fourth ? '2px solid #000':'0'}" [ngClass]="{'animated infinite pulse': fourth }">
+				XI - XII   
+			</li>
+			<li class="tab5" (click)="run('fifth')" [ngStyle]="{'border-top': fifth ? '2px solid #000':'0'}" [ngClass]="{'animated infinite pulse': fifth }">
+				FAQs   
+			</li>
+		</ul>
+	</div>
+
+	<div class="mainContent">
+		<app-nursery-pre-first *ngIf="first"></app-nursery-pre-first>
+		<app-second-fifth *ngIf="second"></app-second-fifth>
+		<app-sixth-tenth *ngIf="third"></app-sixth-tenth>
+		<app-eleven-twelth *ngIf="fourth"></app-eleven-twelth>
+		<app-faq *ngIf="fifth"></app-faq>		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

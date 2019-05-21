@@ -1,0 +1,129 @@
+<div class="overlayGlobal" [ngStyle]="{'display' : MenuIcon ? 'block':'none'}"></div>
+	<div id="nav" [ngStyle]="{ 'height' : MenuIcon ? '100%':'auto' }">
+		<span class="menu" (click)="toggleMenuIcon()">			
+			<div id="nav-icon3" [ngClass]="{'open':MenuIcon}">
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="iconMenu">MENU</div>
+			</div>
+		</span>
+		<ul class="mainNav" [ngStyle]="{ 'display' : MenuIcon ? 'block':'none', 'height' : MenuIcon ? '100%':'auto' }">
+			<li class="homeNav" >				
+				<a routerLink="/home" (click)="hideMenuBar()"><span class="nav-home" ></span>Home</a>
+			</li>
+			<li class="contactNav">				
+				<a routerLink="/contact-us" (click)="hideMenuBar()"><span class="nav-contact" ></span>Contact</a>
+			</li>
+			<li class="studentTcNav">				
+				<a routerLink="/student-tc" (click)="hideMenuBar()"><span class="nav-tc" ></span>Student TC</a>
+			</li>
+
+		</ul>
+		<div class="nav-slider" [ngClass]="{'animated bounceInRight' : MenuIcon}" [ngStyle]="{ 'display' : MenuIcon ? 'block':'none' }" >
+			<ul class="slider-main">
+				<li class="about-us">
+					<span class="grpNav" (click)="toggleAbtUsSubMenu()" style="color: #213f49">	
+						About Us
+						<span class="down-arrow"></span>
+					</span>
+					<ul class="subMenu" [ngStyle]="{'display' : abtToggleFlg ? 'block':'none'}" [ngClass]="{'animated bounceInDown' : abtToggleFlg}">
+						<li class="principalMsgNav">
+							<a (click)="prinMsg()" >
+								<span class="prinMessege-icon"></span>
+								Principal's Message
+							</a>
+						</li>
+						<li class="aboutDPSNav">
+							<a  (click)="abtDPS()" > 
+								<span class="abtDPSRaj-icon"></span>
+								About DPS Agra
+							</a>
+						</li>
+						<li class="aboutDPSNav">
+							<a  (click)="milestone()" >
+								<span class="mile-icon"></span>
+								Our Milestones
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="about-us aboutDPSSecurity" >				
+					<a routerLink="/security" (click)="hideMenuBar()">Security</a>						
+				</li>		
+				<li class="academics academicsNav" >
+					<a routerLink="/acedmic" (click)="hideMenuBar()">Academics</a>
+				</li>
+				<li class="gallery GalleryNav">
+					<a routerLink="/gallery" (click)="hideMenuBar()">Gallery</a>
+				</li>
+				<li class="studentAchivers StudentAchieversNav">
+					<a (click)="goToAchiver()" (click)="hideMenuBar()">Student Achievers</a>
+				</li>
+				<li *ngIf="mobile">
+					<a href="http://dpsagra.ckmeout.com/Final_Prospectus_2019_2020.pdf" target="_blank" >Prospectus</a>
+				</li>
+				<li >
+					<a routerLink="/admission" class="text-dark" (click)="hideMenuBar()">Admission</a>				
+				</li>
+				<li class="about-us">
+					<span class="grpNav" (click)="toggleDownloadsSubMenu()" style="color: #213f49">	
+						Downloads
+						<span class="down-arrow"></span>
+					</span>
+					<ul class="subMenu" [ngStyle]="{'display' : abtToggleFlgdownloads ? 'block':'none'}" [ngClass]="{'animated bounceInDown' : abtToggleFlgdownloads}">
+						<li class="principalMsgNav">
+							<a  href="http://dps.ac.in/Final_Prospectus_2019_2020.pdf" target="_blank" download >
+								<span class="downloadIcon"></span>Prospectus
+							</a>	
+						</li>
+						<li class="aboutDPSNav">
+							<a   href="http://dps.ac.in/TC-Format-2019.docx" target="_blank" download >
+								<span class="downloadIcon"></span>TC Format Form
+							</a>	
+						</li>
+						<li class="aboutDPSNav">
+							<a  href="http://dps.ac.in/Add-SMS-format-2019.docx" target="_blank" download >
+								<span class="downloadIcon"></span>Add SMS Form
+							</a>	
+						</li>
+						<li class="aboutDPSNav">
+							<a  href="http://dps.ac.in/ID-Card-Format-2019.docx" target="_blank" download >
+								<span class="downloadIcon"></span>ID Card Issue Form
+							</a>	
+						</li>
+					</ul>
+				</li>
+
+				<!-- <li class="academics academicsNav" >
+					<a routerLink="http://dps.ac.in/fees.pdf" (click)="hideMenuBar()">Fee Structure for Current Session</a>
+				</li> -->
+				<li class="academics academicsNav">
+					<a  href="http://dps.ac.in/fees.pdf" target="_blank" download >
+						<span class="downloadIcon"></span>Fee Structure for Current Session
+					</a>	
+				</li>
+
+				</ul>
+
+
+
+				<div class="social mobile" *ngIf="mobile">
+					<a href="#" target="_blank">			
+						<span class="facebook"></span>
+					</a>
+					<a href="#" target="_blank">			
+						<span class="twitter"></span>
+					</a>
+					<a href="#" target="_blank">			
+						<span class="google"></span>
+					</a>
+				</div>
+
+
+			</div>
+		</div>

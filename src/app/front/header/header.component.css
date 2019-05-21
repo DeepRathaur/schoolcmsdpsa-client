@@ -1,0 +1,10 @@
+.logo{position:fixed;top:11px;left:42px;z-index:9}
+.logo img{width:84px!important}
+.mobileHeader {    
+    position: fixed;
+    z-index: 1;
+    width: 67px;
+    left: 14px;
+    top: 14px;
+
+}

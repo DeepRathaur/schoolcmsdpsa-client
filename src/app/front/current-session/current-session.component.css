@@ -1,0 +1,41 @@
+.bannerNew {
+    background: url(../../../assets/img/innerBanner/board.jpg) no-repeat center center;		
+    background-size: cover;	
+    height: 400px;				
+    position: relative;
+    
+}
+.innerNew {
+    display: block;
+    background: #000000ab;
+    width: 100%;
+    height: 400px;
+}
+.leftItem, .rightItem {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width:45%;
+}
+
+.rightItem {		
+    top: 120px;	
+    right: 5%;
+    text-align: right;	
+}
+
+
+
+.leftItem {
+    left: 7%;
+}
+
+
+
+
+.innerNew img {
+    width: 60% !important;
+}
+.rightItem img{
+    width: 25% !important;
+}

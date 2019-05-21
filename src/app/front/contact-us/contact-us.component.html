@@ -1,0 +1,121 @@
+
+
+ <div class="bannerNew">
+  <div class="innerNew">
+    <div class="leftItem"><img src="../../assets/img/innerBanner/contact_us/contact_us.png" alt=""></div>
+    <div class="rightItem"><img src="../../assets/img/innerBanner/contact_us/ph_mail.png" alt=""></div>
+  </div>
+</div> 
+
+
+<div class="container-fluid">
+
+  <div class="contact">
+    <div class="row">
+
+      <div class="col-sm-11 mx-auto">
+        <div class="row">          
+          <div class="col-sm-6">
+            <form #f="ngForm" >               
+              <div class="row">
+
+
+                <div class="col-sm-6 ">
+                  <div class="form-group">
+                    <label for="">Full Name</label>
+                    <input class="form-control" style="box-shadow: none" type="text" name="fullname" [(ngModel)]="data.fullname" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Contact Number</label>
+                    <input class="form-control" type="number" style="box-shadow: none"  name="mobileno" [(ngModel)]="data.mobileno" required>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 ">
+                  <div class="form-group">
+                    <label for="">Address</label>
+                    <input class="form-control" type="text" style="box-shadow: none" name="address" [(ngModel)]="data.address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="">E-mail Address</label>
+                    <input class="form-control" type="email"  style="box-shadow: none" name="email" [(ngModel)]="data.email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"> 
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="comment">Message</label>
+                    <textarea class="form-control" rows="5" style="box-shadow: none" id="comment" name="message" [(ngModel)]="data.message" required></textarea>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <button (click)="run(f)" class="btn" [disabled]="!f.valid">  Submit</button>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mailImage" *ngIf="mail">                    
+                    <img src="./../../assets/img/mail.gif" alt="">
+                  </div>
+                  <div class="mailImage" *ngIf="report">                    
+                    <h3 class="text-success">Thank you! Your message has been sent successfully</h3>
+                  </div>
+                  <div class="mailImage" *ngIf="err">                    
+                    <h3 class="text-danger"> Sorry, Something Went Wrong: Please try again.</h3>
+                  </div>
+                </div>  
+              </div>
+            </form>
+
+
+
+          </div>
+
+          <div class="col-sm-6">
+            <div class="contactMap p-3 text-white">  
+
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                  <div >
+                    <h4 >Contact Information</h4>                    
+                    <p >2nd Floor, Saket 75, Gandhi Nagar, Agra</p>
+                    <p >+91 98376 99999  | +91 0562 3001500</p>
+                    <p ><a href="mailto:office@dps.ac.in">office@dps.ac.in</a></p>
+                    <a class="btn btn-sm btn-light text-dark mt-5 mb-5" href="https://www.google.co.in/maps/place/Delhi+Public+School+Agra/@27.2358718,78.0186154,17z/data=!4m5!3m4!1s0x397479f64750be25:0x479c0f05b7c8e56c!8m2!3d27.2361881!4d78.0180894" target="_blank">Get Direction</a>
+
+                  </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                  <img class="float-right" src="../../assets/img/map.PNG" alt="">
+
+                </div>
+              </div>           
+
+
+
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+

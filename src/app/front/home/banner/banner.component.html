@@ -1,0 +1,52 @@
+<div class="slider-holder" [ngStyle]="{'height':hightWindow}" *ngIf="desktop">
+
+
+	<div class="firstImage" [ngStyle]="{'opacity' : first ? '1':'0', 'background':firstUrl}" [ngClass]="{'animated fadeIn':first}">
+
+
+	</div>
+	<div class="secondImage" [ngStyle]="{'opacity' : second ? '1':'0', 'background':secondUrl }" [ngClass]="{'animated fadeIn':second}">
+
+	</div>
+	<div class="thirdImage" [ngStyle]="{'opacity' : third ? '1' : '0', 'background':thirdUrl}" [ngClass]="{'animated fadeIn':third}">
+
+	</div>
+
+	<div class="slider" *ngIf="marqueeFlg">
+		<marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+			<ul class="list-group">
+				<span *ngFor="let item of getArr">
+					<li class="mar list-group-item" *ngIf="item.status">
+						<span>
+							<span [innerHTML]="item.description"></span>
+							<a *ngIf="item.filepath !== null" class="btn btn-sm btn-warning" href="{{item.filepath}}">Click Here</a>
+						</span>
+					</li>
+				</span>
+			</ul>
+		</marquee>
+	</div>
+</div>
+
+
+
+<!-- for mobile -->
+
+<div class="slider-holder" [ngStyle]="{'height':hightWindow}" *ngIf="mobile">
+	<span class="naviLeft" (click)="changeBanner()"></span>
+	<span class="naviRight" (click)="changeBanner()"></span>
+	<div class="firstImage" [ngStyle]="{'opacity' : first ? '1':'0', 'background':firstUrl}">
+		<div class="inner">
+			<!-- <h2>Senior Wing</h2> -->
+		</div>
+
+	</div>
+	<div class="secondImage" [ngStyle]="{'opacity' : second ? '1':'0', 'background':secondUrl }">
+		<!-- <div class="inner" ><h2>Junior Wing</h2></div> -->
+	</div>
+	<div class="thirdImage" [ngStyle]="{'opacity' : third ? '1' : '0', 'background':thirdUrl}">
+		<div class="inner">
+			<h3>We work & we play <br>We learn in every way. </h3>
+		</div>
+	</div>
+</div>

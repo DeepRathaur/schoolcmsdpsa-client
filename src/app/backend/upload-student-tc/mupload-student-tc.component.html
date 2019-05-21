@@ -1,0 +1,50 @@
+<div class="overlayUpload" style=" position: fixed; top: 0; left: 0; background: #05000096; height: 100%; width: 100%; z-index: 9999; color: #fff;" *ngIf="uploadOverlay">
+	<div class="groupUpload" style="   position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 400px; height: 400px; background: #fff; padding: 10px; text-align: center;">
+		<img src="../../../assets/img/uploading.gif" *ngIf="uploadOverlay">
+		<h1 *ngIf="uploading" >Uploading...</h1>
+		<h1 *ngIf="Error" style="color: red">Something Wrong</h1>
+		<h1 *ngIf="success" style="color: green">File Has uploaded</h1>		
+	</div>
+</div>
+
+
+<div class="container-fluid">
+	<div class="row mt-4 text-center">
+		<div class="col-sm-12">
+			<h4 class="mt-4 text-secondary ">Upload Student TC</h4>
+		</div>
+	</div>
+	<div class="row mt-1">
+		<div class="col-sm-6 mx-auto">
+			<form #f="ngForm">
+			<div class="card">
+				<div class="card-header">Upload TC</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label for="">Student Name	</label>
+						<input type="text" class="form-control" name="name" required [(ngModel)]="certificateTc.name">
+					</div>
+					<div class="form-group">
+						<label for="">Admission No</label>
+						<input type="text" class="form-control" name="admissionNo" required  [(ngModel)]="certificateTc.admission_no">
+					</div>
+					<div class="form-group">
+						<label for="">Description</label>
+						<input type="text" class="form-control" name="certificateDescription" required [(ngModel)]="certificateTc.certificate_description">
+					</div>
+					<div class="form-group">
+						<label for="">Select TC</label>
+						<input #fileInput type="file" class="form-control" name="selectedTC" required (change)="fileHaveSelected($event)" >
+					</div>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-info" (click)="uploadTc()" [disabled]="!f.valid" > Upload</button>					
+				</div>				
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- [disabled]="!f.valid" -->

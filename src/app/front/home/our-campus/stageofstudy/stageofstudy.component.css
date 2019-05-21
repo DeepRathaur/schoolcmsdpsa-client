@@ -1,0 +1,25 @@
+.leftSide {
+    width: 50%;
+    float: left;
+}
+
+.rightSide {
+    float: right;
+    width: 49%;
+}
+.imgArea {
+    display: inline-block;
+    width: 39%;
+    margin: 1%;
+}
+@media only screen and (min-width: 300px) and (max-width: 520px){
+	.leftSide{
+		float: none;
+		width: 100%
+	}
+	.rightSide{
+		float: none;
+		width: 100%;
+		padding: 3%
+	}
+}

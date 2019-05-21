@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1367.185px" height="875.857px" viewBox="51.315 22.643 1367.185 875.857"
+	 enable-background="new 51.315 22.643 1367.185 875.857" xml:space="preserve">
+<filter  id="l">
+	<!--  licht donkerder  -->
+</filter>
+<filter  id="d">
+	<!--   donkerder  -->
+</filter>
+<title>pyramid</title>
+<desc>Piramide</desc>
+<g>
+	<title>Layer 1</title>
+	<g id="piramide">
+		<g id="laag5">
+			<g id="svg_1" filter="url(#d)">
+				<polygon fill="#4169E1" points="172.966,849.13 1273.508,849.13 1389.474,733.87 329.861,733.87 				"/>
+			</g>
+			<g id="svg_2" opacity="0.8" filter="url(#l)" enable-background="new    ">
+				<polygon fill="#4169E1" points="1396.295,1003.626 1273.508,849.13 1389.474,733.87 1535,866.296 				"/>
+			</g>
+			<polygon id="svg_3" fill="#E75A48" points="172.966,729.13 1273.508,729.13 1396.295,883.626 57,883.626 			"/>
+		</g>
+		<g id="laag4">
+			<g id="svg_4" filter="url(#d)">
+				<polygon fill="#6495ED" points="311.671,645.205 1137.077,645.205 1225.757,559.374 475.388,559.374 				"/>
+			</g>
+			<g id="svg_5" opacity="0.8" filter="url(#l)" enable-background="new    ">
+				<polygon fill="#6495ED" points="1255.316,804.606 1137.077,645.205 1225.757,559.374 1369.01,694.252 				"/>
+			</g>
+			<polygon id="svg_6" fill="#FFC450" points="195.705,714.606 1255.316,714.606 1137.077,555.205 311.671,555.205 			"/>
+		</g>
+		<g id="laag3">
+			<g id="svg_7" filter="url(#d)">
+				<polygon fill="#00BFFF" points="448.102,446.186 1000.646,446.186 1057.492,389.782 602.723,389.782 				"/>
+			</g>
+			<g id="svg_8" opacity="0.8" filter="url(#l)" enable-background="new    ">
+				<polygon fill="#00BFFF" points="1000.646,446.186 1121.16,600.683 1203.019,522.208 1059.766,389.782 				"/>
+			</g>
+			<polygon id="svg_9" fill="#4D9E97" points="332.135,540.683 1121.16,540.683 1000.646,386.186 448.102,383.733 			"/>
+		</g>
+		<g id="laag2">
+			<g id="svg_10" filter="url(#d)">
+				<polygon fill="#87CEFA" points="589.08,242.262 864.215,242.262 893.775,212.833 684.582,212.833 				"/>
+			</g>
+			<g id="svg_11" opacity="0.8" filter="url(#l)" enable-background="new    ">
+				<polygon fill="#87CEFA" points="982.455,399.21 1037.027,345.259 893.775,212.833 864.215,242.262 				"/>
+			</g>
+			<polygon id="svg_12" fill="#0EB0D6" points="468.566,369.21 982.455,369.21 864.215,212.262 589.08,212.262 			"/>
+		</g>
+		<g id="laag1">
+			<polygon id="svg_13" fill="#B13F73" points="604.997,195.286 843.751,195.286 725.511,38.337 			"/>
+			<g id="svg_14" opacity="0.8" filter="url(#l)" enable-background="new    ">
+				<polygon fill="#B0E0E6" points="843.751,195.286 871.037,170.763 725.511,38.337 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 696.626 130.3545)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-BoldCond'" font-size="42">SR. </tspan><tspan x="-57.644" y="50.4" fill="#FFFFFF" font-family="'MyriadPro-BoldCond'" font-size="42">SECONDARY</tspan></text>
+<text transform="matrix(1 0 0 1 602.9736 318.0215)" fill="#FCFCFC" font-family="'MyriadPro-BoldCond'" font-size="60">SECONDARY</text>
+<text transform="matrix(1 0 0 1 559.624 488.0215)" fill="#FFFFFF" font-family="'MyriadPro-BoldCond'" font-size="60">MIDDLE SCHOOL</text>
+<text transform="matrix(1 0 0 1 628.7437 654.0215)" fill="#FFFFFF" font-family="'MyriadPro-BoldCond'" font-size="60">PRIMARY</text>
+<text transform="matrix(1 0 0 1 581.3452 827.0215)" fill="#FFFFFF" font-family="'MyriadPro-BoldCond'" font-size="60">PRE-PRIMARY</text>
+</svg>

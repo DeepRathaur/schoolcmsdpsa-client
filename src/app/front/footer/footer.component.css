@@ -1,0 +1,48 @@
+.placeholder{
+	padding: 3em;
+}
+.progressContainer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	z-index: 99999999;
+}
+.progress{
+	height: 4px;
+	background: #155724;
+	width: 0;
+	transition: width 0.5s;
+}
+
+
+/*footer*/
+
+.footer li {
+	display: inline;
+	padding: 0 11px;
+	font-size: 0.8em;
+}
+
+.footer {
+	background: #213f49;
+    height: 98px;    
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+.footer a {
+	color: #788286;
+}
+
+p.copy {
+	margin-left: 10px;
+	color: #788286;
+	font-size: 0.7em;
+	
+}
+
+/*end footer*/
+

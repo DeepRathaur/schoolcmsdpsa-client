@@ -1,0 +1,24 @@
+.allSubject .item {
+    width: 31%;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    box-shadow: 2px 2px 2px #ccc;
+    height: 617px;
+}
+
+.allSubject {
+    margin: 0;
+    padding: 0;
+}
+
+.allSubject li {
+    box-shadow: none!important;
+    display: block;
+    text-align: left;
+    line-height: 33px;
+    /* height: 501px; */
+}

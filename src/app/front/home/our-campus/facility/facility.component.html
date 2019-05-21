@@ -1,0 +1,255 @@
+<div class="item" > 
+	<div class="tabs">
+		<ul>
+			<li (click)="run(1)"> <a [ngClass]="{'animated infinite bounce':one}" >SMART CLASS</a></li>
+			<li (click)="run(2)"> <a [ngClass]="{'animated infinite bounce':two}" >SCHOOL CLINIC</a></li>
+			<li (click)="run(3)"> <a [ngClass]="{'animated infinite bounce':three}" >SCHOOL COUNSELLOR</a></li>			
+			<li (click)="run(4)"> <a [ngClass]="{'animated infinite bounce':four}" >SCHOOL LIBRARY</a></li>			
+			<li (click)="run(5)"> <a [ngClass]="{'animated infinite bounce':five}" >LEARNING DISABILITIES</a></li>			
+			<li (click)="run(6)"> <a [ngClass]="{'animated infinite bounce':six}" >CAREER COUNSELLING</a></li>			
+			<li (click)="run(7)"> <a [ngClass]="{'animated infinite bounce':seven}" >AWARDS</a></li>			
+			<li (click)="run(8)"> <a [ngClass]="{'animated infinite bounce':eight}" >ENHANCEMENT CLASSES</a></li>			
+			<li (click)="run(9)"> <a [ngClass]="{'animated infinite bounce':nine}" >PUBLIC EXAMINATION</a></li>			
+		</ul>
+	</div>	
+
+
+
+
+	<!-- smart class -->
+	<div class="contentHolder" *ngIf="one">
+		<div >
+			<p>					
+				All our class rooms are enabled with 42 inch LCD screen , intelligent processors , wireless mouse and keyboards to offer a complete end to end technology integration model for enhancing the sharing and learning process. Smart class is a comprehensive solution designed to assist teachers in meeting with their day to day class room challenges & thereby enhancing students academic performance with simple, practical & meaningful use of technology with instant access to relevant instructor led Multimedia content. <span class="readmore" (click)="readMoreOne()" *ngIf="!moreContentOne" style="cursor: pointer;"> Read More</span>
+
+				<span *ngIf="moreContentOne"> The instruction materials are mapped exactly to the specific curriculum guidelines for use in class.Furthermore , each student is given an answering remote known as sensors with a unique answering code to facilitate learning during the lesson by pressing the appropriate button on their handheld device. This generates the scores achieved individually and for the whole after each exercise is completed. </span>
+
+				</p>			
+			</div>
+			<div class="img-holder">
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/smartClass/01.jpg" alt="">
+				</div>			
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/smartClass/02.jpg" alt="">
+				</div>			
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/smartClass/03.jpg" alt="">
+				</div>						
+
+			</div>
+		</div>
+
+
+		<!--school Clinic -->
+		<div class="contentHolder" *ngIf="two">
+			<div >
+				<p>The school has a fully equipped four bed clinic in the senior wing and two-bed clinic at the Foundation Campus. Two doctors and a trained nurse are available during school hours on all working days. Besides first aid during the school hours, the clinic also conducts and maintains health record of each student.</p>			
+				<ul>
+					<li>conducting Health and Hygiene check up of the students</li>
+					<li>organizing check up by specialists during the Health Week</li>
+					<li>providing Health Education to the students</li>
+					<li>providing safety and first aid education to the students</li>
+					<li>maintaining health records of the students</li>
+				</ul>
+			</div>
+			<div class="img-holder">
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/clinic/01.jpg" alt="">
+				</div>			
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/clinic/02.jpg" alt="">
+				</div>			
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/clinic/03.jpg" alt="">
+				</div>							
+
+			</div>
+		</div>
+
+		<!--school counselor -->
+		<div class="contentHolder" *ngIf="three">
+			<div >
+					<p>The school counselors are specialists in Child Psychology and, therefore, play a vital role in the development of children who need special care or attention.</p>
+
+					<p>The counselors identify such children and help teachers and parents to deal with these children effectively.</p>
+					<span class="readmore" (click)="readMorethree()" *ngIf="!moreContentThree" style="cursor: pointer;"> Read More</span>
+
+					<p *ngIf="moreContentThree">Parents may take help of the counselors in case they find a change in the behavioral pattern of their wards.</p>
+
+					<p *ngIf="moreContentThree">The counselors can also help in cases of learning disabilities, handling hyperactive children, slow learners and children with temporarily changed behavioral pattern due to bereavement/ illness in the family or due to some external factors.</p>
+			</div>
+			<div class="img-holder">
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/School_Counsellor/01.jpg" alt="">
+				</div>		
+			
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/School_Counsellor/02.jpg" alt="">
+				</div>			
+					<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/School_Counsellor/03.jpg" alt="">
+				</div>			
+			</div>
+		</div>
+
+		<!--school library -->
+		<div class="contentHolder" *ngIf="four">
+			<div >
+				<p>The School Library is well equipped with the latest books useful for students and faculty members. It is open to all bonafide students of the school. Reading, Writing, Speaking and Listening are the basic skills to enhance one’s communication skills. Our Library is a virtual knowledge centre where all students make earnest efforts to read beyond books and broaden their perception. </p>			
+				<h3>Library Rules</h3>
+				<ul>
+					<li>	All students must come to the library in a single file.</li>
+					<li>	They must maintain absolute silence in the library.</li>
+					<li>	The library has an 'open access system', i.e., the children are allowed to go directly to the shelves and take a book of their choice.</li>
+
+					<li style="list-style: none"><a (click)="libMore()" *ngIf="!libMoreV"><b>Read More</b></a></li>
+
+					<li *ngIf="libMoreV" >They must keep the books back on the same shelf after reading them.</li>
+					<li *ngIf="libMoreV">Maximum of two books can be issued to a student.</li>
+					<li *ngIf="libMoreV">	The students of grades III-XII can be issued one Hindi book and one English book every fortnight for a period of one week.</li>
+					<li *ngIf="libMoreV">	Students must return their library books at the counter according to their roll numbers. Until the previously issued book is returned, students will 	 not be eligible for fresh issue.</li>
+					<li *ngIf="libMoreV">	No Reference Book will be issued to any student.</li>
+					<li *ngIf="libMoreV">	Books that are marked, disfigured, damaged, or lost will have to be replaced or paid for by the borrower apart from a fine of Rs. 100/- per book.</li>
+					<li *ngIf="libMoreV"> Students are not allowed to bring their personal books or belongings to the library.</li>
+					<li *ngIf="libMoreV"> Each student must bring his/her Almanac and a pencil to the library.</li>
+					<li *ngIf="libMoreV">	Students must keep a track of books read by them in their library record in the almanac.</li>
+					<li *ngIf="libMoreV">	Any student found damaging or defacing a book repeatedly will be debarred from availing library facilities for the whole academic year.</li>
+					<li *ngIf="libMoreV">	Writing, marking or underlining in library books is strictly prohibited.</li>
+					<li *ngIf="libMoreV">	Rs. 2/- per book per day will be fined, if it is not returned on the due date.</li>
+					<li *ngIf="libMoreV">	Students should return their books on the next working day if the returning date coincides with a holiday.</li>
+
+				</ul>
+			</div>
+			<div class="img-holder">
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/School_Library/01.jpg" alt="">
+				</div>			
+				
+				<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/School_Library/03.jpg" alt="">
+				</div>	
+				
+					<div class="imgArea">
+					<img src="../../../../../assets/img/home/ourInfrastructor/School_Library/06.jpg" alt="">
+				</div>			
+			
+
+			</div>
+		</div>
+
+		<!--learning disablity -->
+		<div class="contentHolder" *ngIf="five">
+			<div >
+				<p>A child with a learning disability is said to <b><i>"learn differently"</i></b>. Early identification and remedial teaching using multi-sensory techniques helps a child overcome his/her difficulties to a very large extent.</p>
+
+<p>Famous personalities like Isaac Newton, Winston Churchill, Leonardo-da-Vinci and Albert Einstein all had difficulty in learning to read and write. So it is of utmost importance that we not only help the child to learn differently but also identify his/her strengths and provide proper training and guidance so that he/she may excel in life.</p>
+
+<p>We at DPS Agra ensure that all children get individual attention they deserve so that we may identify their strengths and challenges and work towards making each child a successful human being.</p>
+	
+
+			</div>
+				<div class="img-holder">
+					<!-- <div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>	 -->
+
+				</div>
+			</div>
+
+			<!--CAREER COUNSELLING -->
+			<div class="contentHolder" *ngIf="six">
+				<div >
+					<p>Career counselling and guidance to students and their parents is provided periodically through an expert professional counselor and guide appointed by the school. Parents are given an opportunity to consult the expert on a one-to-one basis for students of grades IX to XII.</p>						
+				</div>
+				<div class="img-holder">
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/career_counsellor/01.jpg" alt="">
+					</div>							
+				</div>
+			</div>
+
+
+
+			<!--Awards -->
+			<div class="contentHolder" *ngIf="seven">
+				
+				<div>
+						<p>Scholar badges and certificates are awarded every year to meritorious students on the basis of their overall performance in academics.</p>
+						<p> Merit and participation certificates are issued to students throughout the year for various activities and competitions at the intra-class, inter-class and inter-house levels.</p>
+				</div>
+				<div class="img-holder">
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/awards/01.jpg" alt="">
+					</div>	
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/awards/02.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/awards/03.jpg" alt="">
+					</div>			
+				
+
+				</div>
+			</div>
+
+			<!--engancement CLASSES -->
+			<div class="contentHolder" *ngIf="eight">
+				<div >
+					<p>The school arranges for enhancement classes in certain subjects after school hours to help students achieve the desired academic standard. </p>
+					<p>The parents are expected to co-operate by collecting their wards after such classes from the school or the City Office.</p>
+							
+				</div>
+				<div class="img-holder">
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/enhancement_classes/01.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/enhancement_classes/02.jpg" alt="">
+					</div>	
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/enhancement_classes/03.jpg" alt="">
+					</div>			
+					
+
+				</div>
+			</div>
+
+
+			<!--PUBLIC EXAMINATION -->
+			<div class="contentHolder" *ngIf="nine">
+				<div >
+					<p>The school encourages students to participate in National Standard Examination (NSE) in Physics, Chemistry, Biology and Astronomy, National Standard Examination Junior Science (NSEJ) & PRMO by IAPT. Special classes for National Talent Search Examination (NTSE) are arranged by the school in-house for selected students free of cost. The school also encourages students to prepare and participate in meaningful examinations organized and conducted by The Delhi Public School Society and CBSE.</p>
+				</div>
+				<div class="img-holder">
+					<!-- <div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>	 -->
+
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>

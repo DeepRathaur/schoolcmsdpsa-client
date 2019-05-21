@@ -1,0 +1,107 @@
+<div class="item" > 
+	
+	<div class="tabs">
+		<ul>
+			<li> <a [ngClass]="{'animated infinite bounce':foundationCampus}" (click)="founcationCampusFun()">Foundation Campus</a></li>
+			<li><a [ngClass]="{'animated infinite bounce':seniorCampus}" (click)="seniorCampusFun()">Senior Campus</a></li>
+			<li><a [ngClass]="{'animated infinite bounce':shikshaKendra}" (click)="shikshaFun()">Shiksha Kendra</a></li>
+		</ul>
+	</div>
+
+	<!-- FOUNDATION CAMPUS -->
+	<div class="contentHolder" *ngIf="foundationCampus">
+		<div >
+			<p>					
+				Grades Nursery to II constitute the Foundation Campus which is housed in a spacious and a colourful building. Each section of Nursery has maximum of 30 children, while in Prep, the strength of students in each class is 32. In Grades I and II, each section has maximum student strength of 36. The student teacher ratio is optimum, ensuring focus on each child's special needs and requirements. 
+
+				<span class="readmore" (click)="foundCampFun()" *ngIf="!foundCamp" style="cursor: pointer;"> Read More</span></p>			
+
+				<p *ngIf="foundCamp">					
+					In DPS Agra, we believe in the natural development of the child. During the primary education, the child absorbs directly from the environment almost like a sponge. Hence, during this phase, language and motor skills are honed through play way method. As they grow, they reach the next stage, and are encouraged to `learn how to learn'. The child learns skills like sorting, grading classifying - all of  that leads to the development of writing, reading and the formation of an analytical mind.</p>
+				</div>
+				<div class="img-holder">
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Foundation_Campus/01.jpg" alt="">
+					</div>			
+					
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Foundation_Campus/03.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Foundation_Campus/04.jpg" alt="">
+					</div>	
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Foundation_Campus/05.jpg" alt="">
+					</div>	
+					
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Foundation_Campus/07.jpg" alt="">
+					</div>	
+
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Foundation_Campus/08.jpg" alt="">
+					</div>	
+
+				</div>
+			</div>
+
+
+			<!-- senior CAMPUS -->
+			<div class="contentHolder"  *ngIf="seniorCampus">
+				<div >
+					<p>Grades III-XII constitute the Senior Campus  at Shastripuram. This is a challenging phase where the children enter into a formal system of education. The school, at this level too, proudly offers most modern facilities. No effort has been spared in creating a learning environment in which the students can  seek excellence  academically, socially, physically, artistically and spiritually. Designed around a central resource - centre incorporating Smart Classes, Science lab, Humanities lab, Math lab, Language lab, Computer lab and a Library, the entire campus has been planned to function as a dynamic and a connected whole.</p>			
+				</div>
+				<div class="img-holder">
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Senior_Campus/01.JPG" alt="">
+					</div>	
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Senior_Campus/02.jpg" alt="">
+					</div>	
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Senior_Campus/03.jpg" alt="">
+					</div>	
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Senior_Campus/04.jpg" alt="">
+					</div>
+					<div class="imgArea">
+						<img src="../../../../../assets/img/home/ourInfrastructor/Senior_Campus/05.jpg" alt="">
+					</div>
+					
+				</div>
+			</div>
+
+			<!-- SHIKSHA kendra -->
+			<div class="contentHolder" *ngIf="shikshaKendra">
+				<div >
+					<p>	Formal education is of little importance unless it contributes to the development of the community at large.  DPS Agra is committed to open the doors of knowledge to the economically challenged and under-privileged. One such initiative is the Shiksha Kendra (started on 17.10.2004) whereby we have opened our doors to these marginalised children. They attend classes after school hours and are provided basic school support by our teachers. <span class="readmore" (click)="shikshaKendFun()" *ngIf="!shikshaKend" style="cursor: pointer;"> Read More</span></p>			
+
+					<span *ngIf="shikshaKend">
+						<h4>Our Aim:</h4>
+						<ul>
+							<li>To ensure all round development of the students i.e. linguistic, social-emotional, cognitive &  physical</li>
+							<li>Our approach is play way and through hands on  experience</li>
+							<li>Children are given uniforms, stationery, school bags etc. free of cost</li>
+							<li>To ensure that global goal of education for all is realized</li>
+							<li>To inculcate and implement competency based curriculum for them</li>
+							<li>To involve a community in the process of education </li>
+						</ul>
+					</span>
+				</div>
+			<!-- 	<div class="img-holder">
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>			
+					<div class="imgArea">
+						<img src="https://www.publicboard.ca/school/giles/Style%20Library/Images/SchoolImage.jpg" alt="">
+					</div>	
+
+				</div> -->
+			</div>
+		</div>
